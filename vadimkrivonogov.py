@@ -315,3 +315,32 @@ if kusimus.lower() == "jah":
     print(f"день недели: {days[int(number)-1]}")
   else:
     print("Ошибка!")
+   
+   #4
+день = int(input("sünnipäev: "))
+месяц = input("sünnikuu: ")
+if месяц == 'detsember':
+	знак = 'стрелец' if (день < 22) else 'козерог'
+elif месяц == 'jaanuar':
+	знак = 'козерог' if (день < 20) else 'водолей'
+elif месяц == veebruar':
+	знак = 'водолей' if (день < 19) else 'рыбы'
+elif месяц == 'märts':
+	знак = 'рыбы' if (день < 21) else 'овен'
+elif месяц == 'april':
+	знак = 'овен' if (день < 20) else 'телец'
+elif месяц == 'mai':
+	знак = 'телец' if (день < 21) else 'близнецы'
+elif месяц == 'juuni':
+	знак = 'близнецы' if (день < 21) else 'рак'
+elif месяц == 'juuli':
+	знак = 'рак' if (день < 23) else 'лев'
+elif месяц == 'august':
+	знак = 'лев' if (день < 23) else 'дева'
+elif месяц == 'september':
+	знак = 'дева' if (день < 23) else 'весы'
+elif месяц == 'oktober':
+	знак = 'весы' if (день < 23) else 'скорпион'
+elif месяц == 'november':
+	знак = 'скорпион' if (день < 22) else 'стрелец'
+print("твой знак :",знак)
