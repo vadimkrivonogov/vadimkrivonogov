@@ -259,21 +259,24 @@ else:
     print("Viga!")
 
 #14.12.22
-try:
-    vanus=int(Input("Kui vana sa oled?"))
-    if vanus>18:
-        print("Kas te annate vanematele loa oma Thavelit vaadata?")
-        o=(input("Jah või ei."))
-        if o.lower()=="jah": #upper()
-             print((o))
-             print("See on ligipääs teie vanematele.")
-             print("Tahvel on kinni.")
-        elif o.upper()=="E1":
-            print("Sissepääs puudub.")
-            print("Tahvel on kinni.")
-    if vanus<18:
-        print
-   
+try: 
+    vanus=int(input("Kui vana sa oled? "))
+    if vanus>=18:
+        print("Kas te annate vanematele loa oma Tahvelit vaadata?")
+        o=(input("Jäh või Ei. "))
+        if o.lower()=="jäh":
+            print({o})
+            print("See on ligipääs teie vanematele.")
+            print("Tahvel on kinni. ")
+        elif o.upper()=="EI":
+            print("sissepääs puudb.")
+            print("Tahvel on kinni. ")
+    if vanus <18:
+        print("Juurdepääs vanematele on automaatselt antud. ")
+except:
+    print("Tahvel on kinni")
+print()
+
 
     
  
